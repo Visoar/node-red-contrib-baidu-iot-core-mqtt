@@ -1,0 +1,95 @@
+{
+    "common": {
+        "label": {
+            "payload": "内容",
+            "topic": "主题",
+            "name": "名称",
+            "username": "用户名",
+            "password": "密码",
+            "property": "属性",
+            "selectNodes": "选择节点...",
+            "expand": "扩展"
+        },
+        "status": {
+            "connected": "已连接",
+            "not-connected": "未连接",
+            "disconnected": "已断开",
+            "connecting": "连接中",
+            "error": "错误",
+            "ok": "确定"
+        },
+        "notification": {
+            "error": "<strong>错误</strong>: __message__",
+            "errors": {
+                "not-deployed": "节点未部署",
+                "no-response": "服务器无反应",
+                "unexpected": "发生意外错误 (__status__) __message__"
+            }
+        },
+        "errors": {
+            "nooverride": "警告: 信息的属性已经不可以改写节点的属性. 详情参考 bit.ly/nr-override-msg-props"
+        }
+    },
+    "mqtt": {
+        "label": {
+            "broker": "接入点",
+            "example": "如：coreID.iot.gz.baidubce.com",
+            "IoTCoreIdexample": "必填，如：axxxxxx",
+            "output": "输出",
+            "qos": "QoS",
+            "retain": "保持",
+            "clientid": "客户端ID",
+            "port": "端口",
+            "keepalive": "Keepalive计时(秒)",
+            "cleansession": "使用新的会话",
+            "use-tls": "使用安全连接 (SSL/TLS)",
+            "tls-config":"TLS 设置",
+            "verify-server-cert":"验证服务器证书",
+            "compatmode": "使用旧式MQTT 3.1（不选默认为3.1.1）",
+            "IoTCoreId": "IoTCoreId",
+            "DeviceKey": "DeviceKey",
+            "DeviceSecret": "DeviceSecret"
+        },
+        "sections-label":{
+            "birth-message": "连接时发送的消息（Birth消息）",
+            "will-message":"意外断开连接时的发送消息（Will消息）",
+            "close-message":"断开连接前发送的消息（关闭消息）"
+        },
+        "tabs-label": {
+            "connection": "连接",
+            "security": "安全",
+            "messages": "消息"
+        },
+        "placeholder": {
+            "clientid": "ClientId，建议与 deviceKey 一致",
+            "clientid-nonclean":"如非新会话，必须设置客户端ID",
+            "will-topic": "留白将不启用Will信息",
+            "birth-topic": "留白将不启用Birth信息",
+            "close-topic": "留白以不启用关闭消息"
+        },
+        "state": {
+            "connected": "已连接到接入点: __broker__",
+            "disconnected": "已断开与接入点 __broker__ 的链接",
+            "connect-failed": "与接入点 __broker__ 的连接失败"
+        },
+        "retain": "保留",
+        "output": {
+            "buffer": "Buffer",
+            "string": "字符串",
+            "base64": "Base64编码字符串",
+            "auto": "自动检测 (字符串或buffer)",
+            "json": "解析的JSON对象"
+        },
+        "true": "是",
+        "false": "否",
+        "tip": "提示: 若希望通过msg属性对topic(信息), qos及retain(保留)进行设置, 则将上述项留白",
+        "errors": {
+            "not-defined": "主题未设置",
+            "missing-config": "未设置接入点",
+            "invalid-topic": "主题无效",
+            "nonclean-missingclientid": "客户端ID未设定，使用新会话",
+            "invalid-json-string": "无效的JSON字符串",
+            "invalid-json-parse": "无法解析JSON字符串"
+        }
+    }
+}
